@@ -1,6 +1,6 @@
 body {
   background-color: white;
-  font-family: Montserrat;
+  font-family: Century Gothic;
 }
 .tab {
   overflow: hidden;
@@ -16,7 +16,7 @@ body {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-family: Montserrat;
+  font-family: Century Gothic;
   font-size: 20px;
 }
 
@@ -42,7 +42,7 @@ h1 {
 }
 
 p {
-  font-family: Montserrat;
+  font-family: Century Gothic;
   font-size: 20px;
 }
 
