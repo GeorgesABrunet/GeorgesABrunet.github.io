@@ -12,7 +12,7 @@
 		</h1>
 
         <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+          <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
           <button class="tablinks" onclick="openTab(event, 'About Me')">About Me</button>
           <button class="tablinks" onclick="openTab(event, 'Work')">Work</button>
           <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
@@ -29,7 +29,7 @@
         <div id="Work" class="tabcontent">
           <p>This is where I will post my work history.</p>
         </div>
-        
+
         <div id="Projects" class="tabcontent">
           <p>This is where I will post past, present, and future projects I am working on.</p>
         </div>
@@ -48,6 +48,8 @@
           document.getElementById(tabName).style.display = "block";
           evt.currentTarget.className += " active";
         }
+
+        document.getElementById("defaultOpen").click();
         </script>
     </body>
     
