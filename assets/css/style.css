@@ -2,40 +2,24 @@ body {
   background-color: white;
   font-family: Century Gothic;
 }
-.tab {
-  overflow: hidden;
-  text-align:center;
-  width: 100%;
-  border: 1px solid white;
-  background-color: white;
-}
-
-.tab button {
-  background-color: inherit;
-  float: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-family: Century Gothic;
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
   font-size: 20px;
+  border-radius: 5px;
 }
 
-.tab button:hover {
+.pill-nav a:hover {
   background-color: lightgrey;
+  color: black;
 }
 
-.tab button.active {
+.pill-nav a.active {
   background-color: grey;
-}
-
-
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid white;
-  border-top: none;
+  color: white;
 }
 
 h1 {
