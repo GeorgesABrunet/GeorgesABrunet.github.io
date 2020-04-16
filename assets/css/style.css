@@ -2,7 +2,7 @@ body {
   background-color: white;
   font-family: Century Gothic;
 }
-.pill-nav a {
+.pill-nav button {
   display: inline-block;
   color: black;
   text-align: center;
@@ -12,12 +12,12 @@ body {
   border-radius: 5px;
 }
 
-.pill-nav a:hover {
+.pill-nav button:hover {
   background-color: lightgrey;
   color: black;
 }
 
-.pill-nav a.active {
+.pill-nav button.active {
   background-color: grey;
   color: white;
 }
