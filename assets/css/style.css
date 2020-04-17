@@ -50,6 +50,7 @@ h2 {
   color: black;
   text-align: center;
   font-size: 22px;
+  margin-bottom: 20px;
 }
 
 p {
@@ -62,5 +63,7 @@ p {
 
 h3{
   color: black;
+  margin-top:10px;
+  margin-bottom:10px;
 }
 
