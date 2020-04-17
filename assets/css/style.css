@@ -1,6 +1,8 @@
 body {
   background-color: white;
   font-family: Century Gothic;
+  max-width: 500px;
+  min-width: 100px;
 }
 .tab {
   overflow: hidden;
