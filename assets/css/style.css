@@ -81,7 +81,9 @@ body {
 }
 .box .content p
 {
-  text-align: justify;
+  margin: 0;
+  padding-left: 0;
+  text-align: center;
 
 }
 
