@@ -21,7 +21,6 @@ body {
   transition: 0.3s;
   font-family: Century Gothic;
   font-size: 20px;
-  margin-bottom: 20px;
 }
 
 .tab button:hover {
@@ -43,6 +42,7 @@ body {
 
 .box
 {
+  margin-top: 5%;
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
