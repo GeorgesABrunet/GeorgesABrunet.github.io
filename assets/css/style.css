@@ -58,6 +58,7 @@ body {
 .box .imgBx 
 {
   width: 15%;
+  flex: 0 0 15%;
 }
 
 .box .imgBx img
@@ -69,11 +70,15 @@ body {
 .box .content
 {
   padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 5%;
-  padding-top: 5%;
 }
 
+.box .content h3
+{
+  margin: 0;
+  padding-left: 0;
+  color: lightgrey;
+
+}
 .box .content p
 {
   text-align: justify;
