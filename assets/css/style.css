@@ -77,7 +77,7 @@ body {
 }
 .box .content p
 {
-  margin: 0;
+  margin: auto;
   padding: 5% 0 0;
   text-align: justify;
 }
