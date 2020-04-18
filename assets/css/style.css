@@ -40,6 +40,12 @@ body {
   border-top: none;
 }
 
+.flex-container
+{
+  display: flex;
+  flex-direction: column;
+}
+
 .box
 {
   position: absolute;
