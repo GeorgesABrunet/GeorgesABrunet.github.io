@@ -50,7 +50,6 @@ body {
 }
 
 .box{
-  left:50%;
   background-color: white;
   margin: 10px;
   width: 50%;
@@ -72,6 +71,7 @@ body {
 
 .box .content{
   padding-left:5%;
+  padding-right: 3%;
 }
 
 .box .content h3{
