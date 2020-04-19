@@ -58,8 +58,8 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 .box .imgBx {
-  max-width: 15% px;
-    flex: 0 0 15%;
+  max-width: 100px;
+  flex: 0 0 100px;
 }
 
 .box .imgBx img{
@@ -67,8 +67,7 @@ body {
 }
 
 .box .content{
-  padding-left:5%;
-  padding-right: 3%;
+  padding-left:20px;
 }
 
 .box .content h3{
