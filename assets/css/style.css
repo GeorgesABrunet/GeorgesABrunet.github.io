@@ -61,12 +61,12 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 .box imgBx {
-  width: 20% px;
-    flex: 0 0 20%;
+  width: 15% px;
+    flex: 0 0 10px;
 }
 
 .box imgBx img{
-  max-width: 20%;
+  max-width: 15%;
 }
 
 .box .content{
