@@ -21,7 +21,6 @@ body {
   transition: 0.3s;
   font-family: Century Gothic;
   font-size: 20px;
-  position:sticky;
 }
 
 .tab button:hover {
@@ -38,7 +37,6 @@ body {
   padding: 6px 12px;
   border: 1px solid white;
   border-top: none;
-  position:sticky;
 }
 
 .flex-container {
