@@ -9,7 +9,6 @@ body {
   border: 1px solid white;
   background-color: white;
   margin-bottom: 20px;
-  position:sticky;
 }
 
 .tab button {
@@ -22,6 +21,7 @@ body {
   transition: 0.3s;
   font-family: Century Gothic;
   font-size: 20px;
+  position:sticky;
 }
 
 .tab button:hover {
