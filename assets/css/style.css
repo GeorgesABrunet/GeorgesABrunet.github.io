@@ -76,14 +76,16 @@ body {
 
 .box .content h3{
   margin: auto;
+  padding-left:0;
   padding-bottom: 2%;
   color: darkgrey;
+  width:80%;
 }
 
 .box .content p{
   font-size: 18px;
   padding-bottom: 2%;
-  margin: auto;
+  margin: 0;
   width: 80%;
 }
 
