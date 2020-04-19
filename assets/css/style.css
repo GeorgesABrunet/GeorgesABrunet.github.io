@@ -97,6 +97,6 @@ p{
 }
 
 p.main {
-  left:50%;
+  float:center;
   width:50%;
 }
