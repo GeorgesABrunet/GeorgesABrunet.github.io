@@ -43,7 +43,6 @@ body {
 .box
 {
   margin-top: 5%;
-  position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
@@ -59,7 +58,6 @@ body {
 {
   width: 20%;
   flex: 0 0 20%;
-  left: 30%;
 }
 
 .box .imgBx img
