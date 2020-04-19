@@ -61,7 +61,7 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 .box imgBx {
-  width: 15% px;
+  max-width: 15% px;
     flex: 0 0 10px;
 }
 
