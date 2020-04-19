@@ -58,7 +58,7 @@ body {
 }
 .box .imgBx {
   padding-left: 3%;
-  align-items:justify;
+  align-items:center;
   padding-top:3%;
   width: 15%;
   flex: 0 0 20%;
