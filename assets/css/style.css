@@ -43,7 +43,7 @@ body {
 .box
 {
   margin-top: 5%;
-  left: 50%;
+  position: relative;
   transform: translate(-50%, -50%);
   width: 50%;
   padding:20px;
@@ -69,7 +69,6 @@ body {
 .box .content
 {
   padding-left: 5%;
-  align-items: justify;
 }
 
 .box .content h3
