@@ -69,6 +69,7 @@ body {
 .box .content
 {
   padding-left: 5%;
+  align-items: justify;
 }
 
 .box .content h3
