@@ -17,6 +17,8 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 6px;
   padding: 14px 16px;
   transition: 0.3s;
   font-family: Century Gothic;
@@ -58,7 +60,6 @@ body {
 }
 .box .imgBx {
   padding-left: 3%;
-  align-items:center;
   padding-top:3%;
   width: 15%;
   flex: 0 0 20%;
