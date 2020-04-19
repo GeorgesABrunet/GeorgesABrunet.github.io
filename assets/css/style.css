@@ -40,50 +40,50 @@ body {
   border-top: none;
 }
 
-.box
-{
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
   margin-top: 5%;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
+  max-width: 100%;
   padding:20px;
+}
+
+
+.box{
+  left:50%;
+  background-color: white;
+  margin: 10px;
+  width: 80%;
   box-sizing: border-box;
-  background: white;
   border-radius: 6px;
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
-  display: flex;
+}
+.box imgBx {
+  width: 150 px;
+    flex: 0 0 20%;
 }
 
-.box .imgBx 
-{
-  width: 20%;
-  flex: 0 0 20%;
+.box imgBx img{
+  max-width: 100%;
 }
 
-.box .imgBx img
-{
-    max-width: 100%;
-    float: center;
+.box .content{
+  padding-left:5%;
 }
 
-.box .content
-{
-  padding-left: 5%;
-}
-
-.box .content h3
-{
+.box .content h3{
   margin: 0;
-  padding-left: 0;
-  color: grey;
-  text-align: center;
+  padding-bottom: 2%;
+  color: darkgrey;
 }
-.box .content p
-{
+
+.box .content p{
+  font-size: 18px;
+  padding-bottom: 2%;
   margin: auto;
-  padding: 0 0 0;
-  text-align: left;
+  width: 50%;
 }
 
 h1 {
@@ -95,23 +95,10 @@ h1 {
 }
 
 h2 {
-  color: grey;
+  margin-top: 20px;
   text-align: center;
-  font-size: 20px;
-  margin-bottom: 50px;
-}
-
-p {
-  font-family: Century Gothic;
-  float: center;
-  font-size: 18px;
+  font-size: 24px;
   margin: auto;
-  width: 50%;
-}
-
-h3{
-  color: black;
-  text-align: center;
 }
 
 
