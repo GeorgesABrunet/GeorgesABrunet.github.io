@@ -237,15 +237,15 @@
         }
 
         window.onscroll = function() {myFunction()};
-        var tabcontent= document.getElementsByClassName("tab");
+        var tabbar= document.getElementsById("tabName");
 
         var sticky = tabcontent.offsetTop;
 
         function myFunction() {
           if (window.pageYOffset >= sticky) {
-            tabcontent.classList.add("sticky")
+            tabbar.classList.add("sticky")
           } else {
-            tabcontent.classList.remove("sticky");
+            tabbar.classList.remove("sticky");
           }
         }
         </script>
