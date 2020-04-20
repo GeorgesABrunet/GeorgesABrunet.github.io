@@ -108,11 +108,11 @@ body {
   max-width: 100%;
 }
 
-.collapsible button:hover {
+.collapsible:hover {
   background-color: lightgrey;
 }
 
-.collapsible button.active {
+.collapsible .active {
   background-color: black;
   color:white;
 }
