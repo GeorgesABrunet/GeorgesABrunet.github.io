@@ -37,14 +37,9 @@ body {
 .tabcontent {
   display: none;
   padding: 6px 12px;
+  transition: 0.3s;
   border: 1px solid white;
   border-top: none;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .flex-container {
