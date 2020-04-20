@@ -20,7 +20,7 @@ body {
   box-sizing: border-box;
   border-radius: 10px;
   padding: 14px 16px;
-  transition: 0.3s;
+  transition: 0.5s;
   font-family: Century Gothic;
   font-size: 20px;
 }
