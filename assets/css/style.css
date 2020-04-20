@@ -93,7 +93,7 @@ body {
   border:none;
   transition:0.5s;
   border-radius: 10px;
-  text-align: center;
+  float:center;
   outline: none;
   font-family: Century Gothic;
   font-size: 20px;
