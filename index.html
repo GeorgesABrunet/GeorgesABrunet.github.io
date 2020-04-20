@@ -123,6 +123,10 @@
           </div>
       </div>
 
+
+
+
+
         <div id="Work" class="tabcontent">
 
           <p class="main">
@@ -131,7 +135,35 @@
             <br>
             Click on the Job Boxes to explore the work I've done!
           </p>
+          <button class="collapsible">
+          <img src = "assets/images/OctaneXtechlogo.png"/>
+          Data Science Intern
+          </button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <br>
+          <br>
+          <button class="collapsible">
+          <img src = "assets/images/FVhslogo.png" alt = "Ree"/>
+          Open Section 2
+          </button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <br>
+          <br>
+          <button class="collapsible">
+          <img src = "assets/images/FVhslogo.png" alt = "Ree"/>
+          Open Section 3
+          </button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
         </div>
+
+
+
 
         <div id="Projects" class="tabcontent">
           <p class="main">
@@ -155,6 +187,21 @@
         }
 
         document.getElementById("defaultOpen").click();
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+        }
         </script>
     </body>
     
