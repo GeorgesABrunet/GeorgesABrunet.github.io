@@ -108,6 +108,10 @@ body {
   max-width: 100%;
 }
 
+.collapsible button {
+  transition: 0.5s;
+}
+
 .collapsible:hover {
   background-color: lightgrey;
 }
