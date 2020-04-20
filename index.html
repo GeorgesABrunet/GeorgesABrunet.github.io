@@ -238,6 +238,19 @@
           } 
         });
         }
+
+        window.onscroll = function() {myFunction()};
+        var tabcontent= document.getElementsByClassName("tabcontent");
+
+        var sticky = tabcontent.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            tabcontent.classList.add("sticky")
+          } else {
+            tabcontent.classList.remove("sticky");
+          }
+        }
         </script>
     </body>
     
