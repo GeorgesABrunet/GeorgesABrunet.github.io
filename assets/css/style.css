@@ -41,6 +41,12 @@ body {
   border-top: none;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .flex-container {
   display: flex;
   align-items: center;
@@ -108,17 +114,6 @@ body {
   color:white;
 }
 
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.collapsible .active:after {
-  content: "\2212";
-}
 
 .collapsiblecontent {
   padding: 0 18px;
