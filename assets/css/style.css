@@ -85,7 +85,7 @@ body {
 
 .collapsible {
   background-color: white;
-  color: grey;
+  color: black;
   cursor: pointer;
   padding: 18px;
   margin-left:25%;
@@ -107,8 +107,14 @@ body {
 .collapsible .imgBx img{
   max-width: 100%;
 }
-.active, .collapsible:hover {
+
+.collapsible button:hover {
   background-color: lightgrey;
+}
+
+.collapsible button.active {
+  background-color: black;
+  color:white;
 }
 
 .collapsible:after {
