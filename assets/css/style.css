@@ -97,6 +97,16 @@ body {
   font-size: 15px;
 }
 
+.collapsible .imgBx {
+  padding-left: 3%;
+  padding-top:3%;
+  width: 15%;
+  flex: 0 0 20%;
+}
+
+.collapsible .imgBx img{
+  max-width: 100%;
+}
 .active, .collapsible:hover {
   background-color: lightgrey;
 }
