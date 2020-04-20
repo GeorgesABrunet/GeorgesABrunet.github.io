@@ -112,7 +112,7 @@ body {
   background-color: lightgrey;
 }
 
-.collapsible .active {
+.active, .collapsible{
   background-color: black;
   color:white;
 }
