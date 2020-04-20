@@ -137,6 +137,7 @@ body {
 
 .collapsiblecontent h3{
   color: grey;
+  text-align:center;
 }
 
 .collapsiblecontent p{
