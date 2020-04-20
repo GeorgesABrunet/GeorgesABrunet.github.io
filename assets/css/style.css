@@ -123,7 +123,7 @@ body {
   content: "\2212";
 }
 
-.collapsible .content {
+.collapsiblecontent {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
