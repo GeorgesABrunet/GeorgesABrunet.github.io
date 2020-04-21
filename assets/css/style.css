@@ -41,10 +41,6 @@ body {
   border-top: none;
 }
 
-.tablinks {
-  transition-delay:0.3s;
-}
-
 .flex-container {
   display: flex;
   align-items: center;
@@ -105,11 +101,6 @@ body {
 
 .collapsible:hover {
   background-color: lightgrey;
-}
-
-.collapsible .active{
-  background-color: black;
-  color:white;
 }
 
 
