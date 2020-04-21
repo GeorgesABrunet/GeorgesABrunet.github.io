@@ -50,6 +50,10 @@ body {
   max-width: 100%;
 }
 
+.flex-container .collapsible{
+  margin-left: 35%;
+  width:30%;
+}
 
 .box{
   background-color: white;
@@ -89,8 +93,6 @@ body {
   color: black;
   cursor: pointer;
   padding: 18px;
-  margin-left: 35%;
-  width:30%;
   border:none;
   transition:0.5s;
   border-radius: 10px;
