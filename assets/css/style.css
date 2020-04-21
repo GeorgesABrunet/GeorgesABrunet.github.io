@@ -116,7 +116,7 @@ body {
   color: black;
   transition:0.5s;
   box-sizing: border-box;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 
 .collapsiblecontent h3{
