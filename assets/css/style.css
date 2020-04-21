@@ -50,6 +50,10 @@ body {
   max-width: 100%;
 }
 
+.flexcontainer .collapsible{
+  align-items:center;
+}
+
 .box{
   background-color: white;
   margin: 10px;
