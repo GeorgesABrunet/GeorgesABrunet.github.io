@@ -90,6 +90,7 @@ body {
   padding: 18px;
   margin-left:35%;
   width: auto;
+  max-width:30%;
   border:none;
   transition:0.5s;
   border-radius: 10px;
