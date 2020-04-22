@@ -85,6 +85,9 @@ body {
   padding-top:3%;
   width: 15%;
   flex: 0 0 20%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
 }
 
 .box .imgBx img{
