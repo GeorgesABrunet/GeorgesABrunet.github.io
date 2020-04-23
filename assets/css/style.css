@@ -176,7 +176,6 @@ body {
 .container .icon
 {
   position:relative;
-  min-width:20%;
     width: auto;
     margin:auto;
     text-align:center;
@@ -189,6 +188,7 @@ body {
 .container .icon .iconBx
 {
   position:relative;
+  min-width:20%;
     width: auto;
     cursor:pointer;
     text-align:center;
