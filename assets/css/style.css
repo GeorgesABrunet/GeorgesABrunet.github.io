@@ -177,6 +177,7 @@ body {
 {
   position:relative;
     width: auto;
+    float:center;
     text-align:center;
     display:flex;
     justify-content: center;
