@@ -232,7 +232,7 @@ body {
 {
     position: relative;
     width:auto;
-    height: 100%;
+    height: auto;
     margin:auto;
     padding:15px;
     display:flex;
