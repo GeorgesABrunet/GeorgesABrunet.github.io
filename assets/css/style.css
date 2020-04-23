@@ -102,8 +102,6 @@ body {
 
 .box .content{
   overflow:hidden;
-  position:absolute;
-  width:27%;
   margin: auto;
   justify-content: justify;
 
