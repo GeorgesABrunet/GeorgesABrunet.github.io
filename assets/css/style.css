@@ -166,6 +166,7 @@ body {
 {
     position:relative;
     align-items:center;
+    text-align:center;
     display: flex;
     margin:auto;
     flex-flow: row wrap;
