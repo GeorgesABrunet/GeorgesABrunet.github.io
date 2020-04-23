@@ -173,6 +173,7 @@ footer {
     margin:auto;
     flex-flow: row wrap;
     width: 50%;
+    padding: 10px;
     overflow:hidden;
 }
 
@@ -234,7 +235,7 @@ footer {
 
 .content .contentBx
 {
-  position: fixed;
+  position: relative;
   width:50%;
   padding:3%;
   height: auto;
