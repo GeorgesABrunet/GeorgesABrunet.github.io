@@ -102,7 +102,7 @@ body {
 
 .box .content{
   overflow:hidden;
-  margin:5%;
+  margin:auto;
   justify-content: justify;
 
 }
