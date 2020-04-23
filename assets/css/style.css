@@ -102,7 +102,8 @@ body {
 
 .box .content{
   overflow:hidden;
-  position:relative;
+  position:absolute;
+
 }
 
 .box .content h3{
