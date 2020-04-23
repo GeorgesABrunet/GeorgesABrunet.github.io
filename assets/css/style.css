@@ -226,14 +226,13 @@ body {
     width:50%;
     margin:auto;
     overflow: hidden;
-    
 }
 
 .content .contentBx
 {
-  position: sticky;
+  position: absolute;
   width:100%;
-  padding:3%;
+  padding:15px;
   height: auto;
     display:flex;
     justify-content: center;
