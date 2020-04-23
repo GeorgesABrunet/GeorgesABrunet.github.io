@@ -3,10 +3,11 @@
 body {
   background-color: white;
     font-family: Montserrat;
+    margin-bottom: 150px;
 }
 footer {
   background-color: inherit;
-  padding: 60px;
+  padding: 150px;
 }
 
 .tab {
