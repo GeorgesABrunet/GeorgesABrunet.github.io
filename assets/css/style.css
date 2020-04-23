@@ -231,13 +231,14 @@ body {
 
 .content .contentBx
 {
-  position: absolute;
+  position: fixed;
   top:600px;
   left:26%;
   width:48%;
   padding:15px;
   height: auto;
   margin:auto;
+  margin-bottom:60px;
     display:flex;
     justify-content: center;
     align-items: center;
