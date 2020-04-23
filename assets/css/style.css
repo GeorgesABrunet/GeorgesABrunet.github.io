@@ -91,6 +91,7 @@ body {
   width: 15%;
   flex: 0 0 20%;
   float: left;
+  margin:auto;
   flex-wrap:wrap;
 }
 
