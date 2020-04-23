@@ -92,6 +92,7 @@ body {
   flex: 0 0 20%;
   justify-content: center;
   align-items: center;
+  margin:auto;
   flex-wrap:wrap;
 }
 
