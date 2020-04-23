@@ -90,8 +90,8 @@ body {
   padding-top:3%;
   width: 15%;
   flex: 0 0 20%;
-  align-items: left;
-  margin:auto;
+  align-items: center;
+  justify-content: center;
   flex-wrap:wrap;
 }
 
