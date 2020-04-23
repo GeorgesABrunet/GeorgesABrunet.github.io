@@ -103,6 +103,8 @@ body {
 .box .content{
   overflow:hidden;
   position:absolute;
+  left:33%;
+  justify-content: justify;
 
 }
 
