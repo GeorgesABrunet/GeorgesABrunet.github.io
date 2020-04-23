@@ -159,6 +159,101 @@ body {
   text-align:justify;
 }
 
+.container
+{
+    position:relative;
+    align-items:center;
+    display: flex;
+    margin:auto;
+    flex-flow: row wrap;
+    width: 50%;
+    padding: 3%;
+    overflow:hidden;
+}
+
+.container .icon
+{
+  position:relative;
+    width: auto;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+.container .icon .iconBx
+{
+  position:relative;
+    width: auto;
+    cursor:pointer;
+    text-align:center;
+    display:flex;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    filter:grayscale(1);
+    transition:0.5s;
+    transform: scale(0.8);
+    color: grey;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+
+}
+
+.container .icon .iconBx:hover
+{
+    filter:grayscale(0);
+    transition:0.5s;
+    transform: scale(1);
+    color: black;
+}
+
+.container .icon .iconBx.active
+{
+    filter:grayscale(0);
+    transition:0.5s;
+    transform: scale(1);
+    color: black;
+}
+
+.content
+{
+  position:relative;
+    width:50%;
+    margin:auto;
+    overflow: hidden;
+    
+}
+
+.content .contentBx
+{
+  position: fixed;
+    width:50%;
+  padding:3%;
+  height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transform: scale(0);
+    opacity:0;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+}
+
+.content .contentBx.active
+{
+    transform: scale(1);
+    opacity:1;
+}
+
+.content .contentBx h3
+{
+    text-align: center;
+}
+
 h1 {
   margin-top: 100px;
   margin-bottom: 25px;
