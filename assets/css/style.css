@@ -234,7 +234,7 @@ footer {
 
 .content .contentBx
 {
-  position: absolute;
+  position: fixed;
   width:50%;
   padding:3%;
   height: auto;
