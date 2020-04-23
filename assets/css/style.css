@@ -231,7 +231,7 @@ body {
 .content .contentBx
 {
   position: fixed;
-  width:100%;
+  width:50%;
   padding:15px;
   height: auto;
     display:flex;
