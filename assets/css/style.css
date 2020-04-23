@@ -179,6 +179,7 @@ body {
 {
   position:relative;
     width: auto;
+    margin:auto;
     text-align:center;
     display:flex;
     justify-content: center;
