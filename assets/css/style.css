@@ -188,8 +188,7 @@ body {
 .container .icon .iconBx
 {
   position:relative;
-  min-width:60%;
-    width: auto;
+  min-width:20%;
     cursor:pointer;
     text-align:center;
     display:flex;
