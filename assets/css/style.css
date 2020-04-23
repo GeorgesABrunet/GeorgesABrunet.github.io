@@ -5,10 +5,6 @@ body {
     font-family: Montserrat;
     margin-bottom: 150px;
 }
-footer {
-  background-color: inherit;
-  padding: 150px;
-}
 
 .tab {
   overflow: hidden;
@@ -173,7 +169,7 @@ footer {
     margin:auto;
     flex-flow: row wrap;
     width: 50%;
-    padding: 10px;
+    padding: 15px;
     overflow:hidden;
 }
 
@@ -235,8 +231,8 @@ footer {
 
 .content .contentBx
 {
-  position: relative;
-  width:50%;
+  position: sticky;
+  width:100%;
   padding:3%;
   height: auto;
     display:flex;
