@@ -230,7 +230,7 @@ body {
 
 .content .contentBx
 {
-  position: fixed;
+  position: relative;
   width:48%;
   padding:15px;
   height: auto;
