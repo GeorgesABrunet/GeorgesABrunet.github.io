@@ -87,7 +87,8 @@ body {
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 .box .imgBx {
-  width: 25%;
+  padding:3%;
+  width: 30%;
   display: flex;
   float: left;
   justify-content: justify;
