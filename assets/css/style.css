@@ -168,6 +168,7 @@ body {
     display: flex;
     margin:auto;
     flex-flow: row wrap;
+    left:30%;
     width: 40%;
     padding: 15px;
     overflow:hidden;
@@ -231,8 +232,8 @@ body {
 .content .contentBx
 {
   position: fixed;
-  top:60%;
-  width:96%;
+  top:400px;
+  width:48%;
   padding:15px;
   height: auto;
   margin:auto;
