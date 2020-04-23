@@ -162,13 +162,12 @@ body {
 
 .container
 {
-    position:absolute;
+    position:relative;
     align-items:center;
     text-align:center;
     display: flex;
     margin:auto;
     flex-flow: row wrap;
-    left:30%;
     width: 40%;
     padding: 15px;
     overflow:hidden;
@@ -231,7 +230,7 @@ body {
 
 .content .contentBx
 {
-  position: fixed;
+  position: absolute;
   top:600px;
   left:26%;
   width:48%;
