@@ -176,6 +176,7 @@ body {
 .container .icon
 {
   position:relative;
+  min-width:20%;
     width: auto;
     margin:auto;
     text-align:center;
