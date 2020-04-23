@@ -162,7 +162,7 @@ body {
 
 .container
 {
-    position:relative;
+    position:absolute;
     align-items:center;
     text-align:center;
     display: flex;
@@ -230,7 +230,8 @@ body {
 
 .content .contentBx
 {
-  position: relative;
+  position: fixed;
+  top:60%;
   width:96%;
   padding:15px;
   height: auto;
