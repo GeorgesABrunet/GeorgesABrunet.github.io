@@ -168,7 +168,7 @@ body {
     display: flex;
     margin:auto;
     flex-flow: row wrap;
-    width: 50%;
+    width: 40%;
     padding: 15px;
     overflow:hidden;
 }
