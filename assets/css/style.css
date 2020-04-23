@@ -89,7 +89,7 @@ body {
 .box .imgBx {
   padding: 3%;
   width: 25%;
-  flex: 0 0 20%;
+  flex: 0 0 10%;
   float: left;
   margin:auto;
   flex-wrap:wrap;
