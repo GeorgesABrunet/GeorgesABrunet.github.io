@@ -235,7 +235,7 @@ body {
 .content .contentBx
 {
     position: absolute;
-    width:auto;
+    width:100%;
     height: auto;
     margin:auto;
     padding:15px;
