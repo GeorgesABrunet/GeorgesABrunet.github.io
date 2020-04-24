@@ -181,6 +181,7 @@ body {
 {
   position:relative;
   margin:auto;
+  z-index:1;
     text-align:center;
     display:flex;
     justify-content: center;
