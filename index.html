@@ -16,7 +16,7 @@
         <br> Programmer, Artist, Video Game Enthusiast
       </h2>
 
-<div class="tab" id="navbar">
+<div class="tab">
   <button class="tablinks" onclick="openTab(event, 'About Me')" id="defaultOpen">About Me</button>
   <button class="tablinks" onclick="openTab(event, 'Work')">Work</button>
   <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
@@ -384,19 +384,6 @@
             content.style.maxHeight = content.scrollHeight + "px";
           } 
         });
-        }
-
-        window.onscroll = function() {myFunction()};
-
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
         }
 
 
