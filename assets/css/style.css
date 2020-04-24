@@ -9,7 +9,6 @@ body {
 }
 
 .tab {
-  overflow: hidden;
   text-align:center;
   width: 100%;
   border: 1px solid white;
@@ -111,12 +110,10 @@ body {
 
 .box .content h3{
   color: darkgrey;
-  overflow:hidden;
 }
 
 .box .content p{
   font-size: 18px;
-  overflow:hidden;
 }
 
 .collapsible {
