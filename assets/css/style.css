@@ -297,7 +297,7 @@ p{
 }
 
 p.main {
-  padding-left:25%;
+  margin:auto;
   width:50%;
 }
 
@@ -332,12 +332,12 @@ p.main {
 }
 
 .excel{
-  width:80%;
+  width:85%;
     animation: excel 2s;
 }
 
 .powerpoint{
-  width:90%;
+  width:100%;
     animation: powerpoint 2s;
 }
 
@@ -473,7 +473,7 @@ p.main {
       width: 0%;
     }
     100%{
-      width: 80%;
+      width: 85%;
     }
 }
 @keyframes powerpoint{
@@ -481,7 +481,7 @@ p.main {
       width: 0%;
     }
     100%{
-      width: 90%;
+      width: 100%;
     }
 }
 @keyframes word{
