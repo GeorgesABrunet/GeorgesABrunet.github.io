@@ -333,22 +333,55 @@ p.main {
 
 .excel{
   width:80%;
-    animation: russian 2s;
+    animation: excel 2s;
 }
 
 .powerpoint{
   width:90%;
-    animation: russian 2s;
+    animation: powerpoint 2s;
 }
 
 .word{
   width:100%;
-    animation: russian 2s;
+    animation: word 2s;
 }
 
 .VBA{
   width:50%;
-    animation: russian 2s;
+    animation: VBA 2s;
+}
+
+.python{
+  width:50%;
+    animation: python 2s;
+}
+.numpy{
+  width:70%;
+    animation: numpy 2s;
+}
+.pandas{
+  width:75%;
+    animation: pandas 2s;
+}
+.scipy{
+  width:45%;
+    animation: scipy 2s;
+}
+.matplotlib{
+  width:70%;
+    animation: matplotlib 2s;
+}
+.seaborn{
+  width:60%;
+    animation: seaborn 2s;
+}
+.scikitlearn{
+  width:35%;
+    animation: scikitlearn 2s;
+}
+.statsmodels{
+  width:60%;
+    animation: statsmodels 2s;
 }
 
 @keyframes french{
@@ -430,5 +463,76 @@ p.main {
     }
     100%{
       width: 50%;
+    }
+}
+@keyframes python{
+  0%{
+      width: 0%;
+    }
+    100%{
+      width: 50%;
+    }
+}
+
+@keyframes numpy{
+  0%{
+      width: 0%;
+    }
+    100%{
+      width: 70%;
+    }
+}
+
+@keyframes pandas{
+  0%{
+      width: 0%;
+    }
+    100%{
+      width: 75%;
+    }
+}
+
+@keyframes scipy{
+  0%{
+      width: 0%;
+    }
+    100%{
+      width: 45%;
+    }
+}
+
+@keyframes matplotlib{
+  0%{
+      width: 0%;
+    }
+    100%{
+      width: 70%;
+    }
+}
+
+@keyframes seaborn{
+  0%{
+      width: 0%;
+    }
+    100%{
+      width: 60%;
+    }
+}
+
+@keyframes scikitlearn{
+  0%{
+      width: 0%;
+    }
+    100%{
+      width: 35%;
+    }
+}
+
+@keyframes statsmodels{
+  0%{
+      width: 0%;
+    }
+    100%{
+      width: 60%;
     }
 }
