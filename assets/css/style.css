@@ -111,10 +111,12 @@ body {
 
 .box .content h3{
   color: darkgrey;
+  overflow:hidden;
 }
 
 .box .content p{
   font-size: 18px;
+  overflow:hidden;
 }
 
 .collapsible {
