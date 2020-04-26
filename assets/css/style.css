@@ -181,7 +181,6 @@ body {
 {
   position:relative;
   margin:auto;
-  z-index:1;
     text-align:center;
     display:flex;
     justify-content: center;
@@ -263,7 +262,7 @@ body {
   background: white;
     display:block;
     height: 10px;
-    width:500px;
+    width:480px;
     margin:auto;
     border: 2px solid rgba(0,0,0,0.3);
     border-radius: 5px;
