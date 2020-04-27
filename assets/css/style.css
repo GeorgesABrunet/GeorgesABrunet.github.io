@@ -112,10 +112,6 @@ body {
   color: darkgrey;
 }
 
-.box .content h2{
-  color: darkgrey;
-  font-family: Century Gothic;
-}
 
 .box .content p{
   font-size: 18px;
@@ -157,6 +153,12 @@ body {
   color: black;
   text-align:center;
   font-size: 26px;
+}
+
+.collapsiblecontent h2{
+  color: darkgrey;
+  text-align:center;
+  font-family: Century Gothic;
 }
 
 .collapsiblecontent h4{
