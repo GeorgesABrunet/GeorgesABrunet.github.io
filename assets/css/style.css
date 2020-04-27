@@ -112,6 +112,11 @@ body {
   color: darkgrey;
 }
 
+.box .content h2{
+  color: darkgrey;
+  font-family: Montserrat;
+}
+
 .box .content p{
   font-size: 18px;
 }
