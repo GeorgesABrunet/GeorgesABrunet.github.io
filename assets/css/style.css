@@ -130,6 +130,9 @@ body {
   font-family: Century Gothic;
 }
 
+.collapsible button{
+  font-family: Montserrat;
+}
 
 .collapsible:hover {
   background-color: lightgrey;
@@ -155,11 +158,6 @@ body {
   font-size: 26px;
 }
 
-.collapsiblecontent h2{
-  color: darkgrey;
-  text-align:center;
-  font-family: Century Gothic;
-}
 
 .collapsiblecontent h4{
   color: black;
