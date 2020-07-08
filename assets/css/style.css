@@ -421,6 +421,11 @@ p.main {
   animation: matlab 2s;
 }
 
+.lua{
+  width:75%;
+  animation: lua 2s;
+}
+
 @keyframes french{
   0%{
       width: 0%;
@@ -635,4 +640,13 @@ p.main {
     100%{
       width: 60%;
     }
+}
+
+@keyframe lua{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 75%;
+  }
 }
