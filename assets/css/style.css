@@ -133,14 +133,14 @@ body {
   font-family: Montserrat;
 }
 
+.collapsible button.active{
+  background-color: black;
+  color:white;
+}
 .collapsible:hover {
   background-color: lightgrey;
 }
 
-.collapsible:active {
-background-color: black;
-  color:white;
-}
 
 .collapsiblecontent {
   padding: 0 18px;
