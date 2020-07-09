@@ -642,7 +642,7 @@ p.main {
     }
 }
 
-@keyframe lua{
+@keyframes lua{
   0%{
     width: 0%;
   }
