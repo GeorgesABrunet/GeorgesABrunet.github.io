@@ -137,10 +137,10 @@ body {
   background-color: lightgrey;
 }
 
-.collapsible.active {
+/*.collapsible.active {
   background-color: black;
   color:white;
-}
+}*/
 
 .collapsiblecontent {
   padding: 0 18px;
@@ -154,6 +154,11 @@ body {
   transition:0.5s;
   box-sizing: border-box;
   border-radius: 12px;
+}
+
+.collapsiblecontent h3{
+  color: black;
+  text-align:center;
 }
 
 .collapsiblecontent h4{
