@@ -142,6 +142,7 @@ body {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
+  align-items:center;
   transition: max-height 0.3s ease-out;
   width:50%;
   background-color: white;
@@ -407,7 +408,7 @@ p.main {
 }
 
 .cplusplus{
-  width:30%;
+  width:50%;
   animation: cplusplus 2s;
 }
 
@@ -424,6 +425,11 @@ p.main {
 .lua{
   width:75%;
   animation: lua 2s;
+}
+
+.C{
+  width:70%;
+  animation: C 2s;
 }
 
 @keyframes french{
@@ -620,7 +626,7 @@ p.main {
       width: 0%;
     }
     100%{
-      width: 30%;
+      width: 50%;
     }
 }
 
@@ -648,5 +654,14 @@ p.main {
   }
   100%{
     width: 75%;
+  }
+}
+
+@keyframes C{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
   }
 }
