@@ -410,7 +410,7 @@ p.main {
 }
 
 .cplusplus{
-  width:50%;
+  width:60%;
   animation: cplusplus 2s;
 }
 
@@ -427,6 +427,11 @@ p.main {
 .lua{
   width:75%;
   animation: lua 2s;
+}
+
+.csharp{
+  width:80%;
+  animation: Csharp 2s;
 }
 
 .C{
@@ -628,7 +633,7 @@ p.main {
       width: 0%;
     }
     100%{
-      width: 50%;
+      width: 60%;
     }
 }
 
@@ -665,5 +670,14 @@ p.main {
   }
   100%{
     width: 70%;
+  }
+}
+
+@keyframes Csharp{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
   }
 }
