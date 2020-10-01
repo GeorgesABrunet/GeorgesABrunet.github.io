@@ -425,7 +425,7 @@ p.main {
 }
 
 .lua{
-  width:75%;
+  width:85%;
   animation: lua 2s;
 }
 
@@ -660,7 +660,7 @@ p.main {
     width: 0%;
   }
   100%{
-    width: 75%;
+    width: 85%;
   }
 }
 
