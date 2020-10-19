@@ -141,7 +141,7 @@ body {
   background-color: black;
   color:white;
 }*/
-.button.collapsible:hover {
+.button .collapsible:hover {
   background-color: #f1f1f1;
 }
 
