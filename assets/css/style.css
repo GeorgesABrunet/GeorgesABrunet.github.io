@@ -149,7 +149,7 @@ body {
   align-items:center;
   transition: max-height 0.3s ease-out;
   width:50%;
-  background-color: white;
+  background-color:#f1f1f1;
   color: black;
   transition:0.5s;
   box-sizing: border-box;
