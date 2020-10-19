@@ -137,17 +137,7 @@ body {
   background-color: lightgrey;
 }
 
-/*.collapsible:active {
-  background-color: black;
-  color:white;
-}*/
-.button .collapsible:hover {
-  background-color: #f1f1f1;
-}
 
-.button.collapsible:hover {
-  background-color: lightgrey;
-}
 .collapsiblecontent {
   padding: 0 18px;
   max-height: 0;
