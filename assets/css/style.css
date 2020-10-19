@@ -154,12 +154,21 @@ body {
 .collapsiblecontent button:hover {
   background-color: lightgrey;
 }
+
+.collapsiblecontent button {
+  background-color: #f1f1f1;
+}
 .collapsiblecontent h3{
   color: black;
   text-align:center;
 }
 
 .collapsiblecontent h4{
+  color: black;
+  text-align:center;
+}
+
+.collapsiblecontent h2{
   color: black;
   text-align:center;
 }
