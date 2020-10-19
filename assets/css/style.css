@@ -137,10 +137,10 @@ body {
   background-color: lightgrey;
 }
 
-/*.collapsible.active {
+.collapsible:active {
   background-color: black;
   color:white;
-}*/
+}
 
 .collapsiblecontent {
   padding: 0 18px;
