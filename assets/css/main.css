@@ -1602,6 +1602,10 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
+		.box h3{
+			color:black;
+		}
+
 /* Button */
 
 	input[type="button"],
