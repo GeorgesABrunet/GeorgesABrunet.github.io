@@ -41,103 +41,174 @@
 			<!-- Main -->
 			<section id="main">
 				<div class="container">
+					<article class="box post">
+						<header class="major">
+							<h3>GD50 Assignments</h3>
+						</header>
+						<p>
+							HarvardX's Computer Science for Game Development course, also known as GD50, offers 11 assignments and a final project
+							to experiment and learn the intricate environment that is game development. The assignments have incrementing difficulties
+							and each explore different aspects of game programming. The first 8 assignments explore 2D aspects and use Love2D as a platform
+							and Lua as a scripting language. The last three use the Unity engine and C# to script. I have posted all 11 assignments 
+							here, and am providing the code to these on Github below! The final project was also submitted to a Game Jam, so you may 
+							find it there, under Great Harvest Game Jam!
+						</p>
+						<footer>
+							<ul class="actions">
+								<li><a href="https://github.com/GeorgesABrunet/gd-50" class="button alt">View Assignments</a></li>
+							</ul>
+						</footer>
+					</article>
+
 					<div class="row">
 						<div class="col-12">
 
 							<!-- Portfolio -->
 							<section>
-								<header class="major">
-									<h2>GAME JAMS</h2>
-								</header>
 								<div class="row">
-
-									<!-- Game Jam Boxes! -->
+									<!-- GD50 Boxes! -->
 									<div class="col-4 col-6-medium col-12-small">
 										<section class="box">
 											<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 											<header>
-												<h3>My First Game Jam: Summer 2020</h3>
+												<h3>Assignment 0: Pong</h3>
 											</header>
-											<p> My first game jam which lasted 2 weeks. Olivia Maciejewska and I made a cute infinite runner to match the 
-												theme of "change". The goal is to avoid toys while escaping the clutches of your mother. Don't let your 
-												diaper get changed! 
+											<p> The first assignment with the goal to familiarize with Lua and Love2D. Pong is a very old
+												game yet it is still played today. Instructions were to implement an AI paddle for player 1, 2, or both!
 											</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="https://pootmoop-studio.itch.io/diaperchange" class="button alt">View Submission</a></li>
-												</ul>
-											</footer>
 										</section>
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
 										<section class="box">
 											<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
 											<header>
-												<h3>Big Brain Game Jam 2.0</h3>
+												<h3>Assignment 1: Flappy Bird</h3>
 											</header>
-											<p> A short 3 day jam with the goal to complete a game in the given time! The player must avoid the spinning 
-												pole, which will push you into lava if you do not jump or counter! This minigame earned 2nd place, with 
-												the highest ranking in visuals and theme. 
+											<p> Flappy Bird is a game that hit the mobile scene almost a decade ago, and is still popular to this day.
+												Instructions were to influence pipe generation, reward the player with a medal for their performance along
+												with score, and to implement a pause feature.
 											</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="https://pootpootpoot.itch.io/twisted-loop" class="button alt">View Submission</a></li>
-												</ul>
-											</footer>
 										</section>
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
 										<section class="box">
 											<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
 											<header>
-												<h3>Great Harvest Game Jam</h3>
+												<h3>Assignment 2: Breakout</h3>
 											</header>
-											<p> A month long game jam, and my submission to the GD50 final project. This prototype is a playground for 
-												testing 2D mechanics from a bar hub to instantiated mission with various mechanics. The color scheme of
-												the game follows the pear-36 spectrum! 
+											<p> Instructions were to add a powerup to the game to spawn 2 extra balls upon collision with powerup, to grow
+												and shrink the paddle when the player gains enough points or loses a life, and to add a locked brick that will
+												only open when the player collects a powerup that acts as a key to unlock this brick.
 											</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="https://pootpootpoot.itch.io/oubliettes" class="button alt">View Submission</a></li>
-												</ul>
-											</footer>
 										</section>
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
 										<section class="box">
 											<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
 											<header>
-												<h3>Extra Credits Game Jam #6</h3>
+												<h3>Assignment 3: Match-3</h3>
 											</header>
-											<p> A 48 hour Game Jam completed by Olivia Maciejewska and I. This game was made using Core, a game engine
-												 based on Epic Games's Unreal Engine. This multiplayer search-and-rescue FPS is based on the Spanish Flu 
-												 and set on WWI.
-												</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="https://pootmoop-studio.itch.io/man-down" class="button alt">View Submission</a></li>
-												</ul>
-											</footer>
+											<p> Instructions were to implement a timer extension by 1 second for each tile upon scoring a match, creating 
+												and adding shiny versions of blocks that would destroy an entire row or column upon match, to ensure that 
+												level 1 starts just with simple flat blocks and increase variety per level, and to allow swapping only when 
+												it results in a match, resetting the grid if there are no available matches.
+											</p>
 										</section>
 									</div>
 									<div class="col-4 col-6-medium col-12-small">
 										<section class="box">
 											<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
 											<header>
-												<h3>Game Off Game Jam 2020</h3>
+												<h3>Assignment 4: Super Mario Bros</h3>
 											</header>
-											<p>Hosted by Github, this month-long game jam is a project completed with Olivia Maciejewska. With the theme
-												of "Moonshot", we decided to make a resource management survival game where the player must micro manage
-												his ship in order to make it to a distant moon.
+											<p> Super Mario Bros is one of the greats, still being remastered and explored today! Instructions were to
+												improve the player spawning so the player always spawns above solid ground, to generate a random colored
+												key and block that when the player collides with the key and then the block, trigger the block to disappear
+												and make a flag spawn at the end of the level. Upon collision with the flag, the player would progress to the
+												next level and retain his or her score.
 											</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="#" class="button alt">View Submission</a></li>
-												</ul>
-											</footer>
 										</section>
 									</div>
-									<!-- End Game Jam Boxes-->
+									<div class="col-4 col-6-medium col-12-small">
+										<section class="box">
+											<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+											<header>
+												<h3>Assignment 5: Legend of Zelda</h3>
+											</header>
+											<p>The Legend of Zelda is another infamous game. Instructions were to implement hearts that drop from enemies at 
+												random and heal the player upon collision, to add pots to the game world that the player is then able to throw at 
+												enemies when picked up, and using animations to reflect all those actions. The pots should also break then disappear
+												upon collision with enemies or walls or when traveling more than 4 tiles. This was the hardest assignment in my opinion.
+											</p>
+										</section>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<section class="box">
+											<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+											<header>
+												<h3>Assignment 6: Angry Birds</h3>
+											</header>
+											<p> Angry Birds is a huge franchise with a movie. Or movies? I don't know. Instructions were to implement functionalities 
+												such that when the player presses the space bar after they've launched an Alien (and it hasn't hit anything yet), the 
+												alien will then split into three separate aliens that all behave like the base Alien.
+											</p>
+										</section>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<section class="box">
+											<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+											<header>
+												<h3>Assignment 7: Pokemon</h3>
+											</header>
+											<p> By far the most exciting assignment for me since Pokemon is the first game I ever played, this assignment let me finally
+												see behind the works how the early versions of the game worked. The instructions were to implement a menu that appears during 
+												the player's pokemon's level up state that shows, for each stat, 'X + Y = Z', where X is the starting stat, Y is the increase, 
+												and Z is the result. The math here is obviously simple but the logic of value storage and updating through states is a pretty
+												exciting concept!
+											</p>
+										</section>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<section class="box">
+											<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+											<header>
+												<h3>Assignment 8: 3D Helicopter Game</h3>
+											</header>
+											<p>Based on that one game we all know from Miniclip if you were born between 1990 and 2000, this assignment was the first where
+												we used the Unity engine! This was especially exciting as I'd been keen on using it for a long time. The instructions were to
+												implement gems to the game that spawn pretty much the same way as coins, though more rarely and award more points on collision.
+												We were also to fix the bug whereby the scroll speed of assets does not reset when the game is restarted via the space bar.
+											</p>
+										</section>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<section class="box">
+											<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+											<header>
+												<h3>Assignment 9: Dreadhalls</h3>
+											</header>
+											<p>Based on a VR game that is a mix of exploration and the horror genre, assignment 9 explored 3d space with 3d graphics. 
+												The instructions were to spawn holes in a procedurally generated maze that the player can fall through. When the player 
+												falls through these holes, a Game Over scene was to appear and bring the player back to the title. We were also to add a 
+												text label to keep track of which maze/level the player is in and increment it by 1 upon level completion and resetting it
+												upon game over.
+											</p>
+										</section>
+									</div>
+									<div class="col-4 col-6-medium col-12-small">
+										<section class="box">
+											<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+											<header>
+												<h3>Assignment 10: Portal</h3>
+											</header>
+											<p>Portal is a magical game made by Valve that uses portals to solve puzzles. The goal of the last assignment before the final
+												project was to create a map for the level using a Unity package called ProBuilder and ProGrids, ensure that the level has an
+												FPSController to navigate with in the scene, and ensure that there is an object or region with a trigger at the very end that 
+												will trigger the end of the level, notably a display of "You won!" on the screen with a Text object.
+											</p>
+										</section>
+									</div>
+									<!-- End GD50 Boxes-->
 
 								</div>
 							</section>
