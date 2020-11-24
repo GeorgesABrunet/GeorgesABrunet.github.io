@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Twisted Loop</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="images/gabicon.png"/>
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+			<!-- Intro Start-->
+				  <!-- Header -->
+			<section id="header">
+	  
+			  <!-- Logo -->
+				<h1><a href="index.html">Georges Brunet</a></h1>
+	  
+			  <!-- Nav -->
+				<nav id="nav">
+				  <ul>
+					<li ><a href="index.html">Home</a></li>
+					<li class="current">
+					  <a href="#">Projects</a>
+					  <ul>
+						<li><a href="GameJams.html">Game Jams</a></li>
+						<li><a href="GD50.html">GD50</a></li>
+						<li><a href="IBMCapstoneProj.html">IBM Certificate Capstone</a></li>
+					  </ul>
+					</li>
+					<li><a href="Resume.html">Resume</a></li>
+					<li><a href="Work.html">Work</a></li>
+					<li><a href="Education.html">Education</a></li>
+					<li><a href="Skills.html">Skills</a></li>
+					
+				  </ul>
+				</nav>
+				<!-- Intro End-->
+			</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+									<article class="box post">
+										<a class="image featured"><img src="images/OubliettesGP.png"/></a>
+										<header>
+											<h2>Oubliettes</h2>
+											<p>Great Harvest Game Jam</p>
+										</header>
+										<p>
+											This month-long game jam proved to be my biggest independent project yet. I wanted to submit this for the 
+											game jam as well as my final project for the HarvardX Game Development Professional Certificate. The theme 
+											of the jam was the season of fall in November and to follow as strict color palette called pear-36. This color
+											palette makes it so the atmosphere is cozy and gives the feeling of leaves falling from a tree or setting a 
+											table for Thanksgiving. So with this in mind, I decided to create a pet project.
+										</p>
+										<header>
+											<h3>Inspiration</h3>
+										</header>
+										<p>
+											Oubliettes was to be a game about the near endless posibilities of procedurally designed missions accessed from 
+											a job board in a cozy bar the player finds himself in. I wanted to create this sense of a hub with multiple things 
+											to do right from the start. This tested the limits of my abilities at the time as well as my ability to crunch down 
+											the scope of a game to a time constraint.
+										</p>
+										<header>
+											<h3>How its made</h3>
+										</header>
+										<p>
+											 The game uses a Universal Render Pipeline though it is strictly cast onto 2D so I could play around with shaders for 
+											 the first time. There are separate scenes for each mission that call a construction function upon generation that randomly selects
+											 the size, map layout, number and type of enemies, and goals to achieve in order to return to the bar. There is also a primitive inventory and 
+											 equipment system in place so the player can keep items on themselves throughout missions. These missions take in a varying amount 
+											 of values to determine how it will be but all mainly take in deciding values from the name of the mission the player selects 
+											 from the job board. I chose this layout mainly to play around with a structure such as this one.
+										</p>
+										<p>
+											I applied a neat little UI system that updates itself in real-time based on the player's health and inventory, as well as available actions. 
+											I made it so the player would have varying actions pop up when within the radius of trigger colliders and to have the matching action appear 
+											on the UI if the player is closest to the center point of a collider. This was to override the possibility of being unable to interact with 
+											an object if it is surrounded by others. There is a primitive combat system in place but it limited to use in missions or combat zones only. 
+											To test it out I created a back room in the hub where the player can fight in different scenarios. Unfortunately, I did not have the time necessary 
+											to refine the system, and now enemies just run to the characters location when within range and immediately start whacking non-stop, until the player 
+											is dead. This only stops if the player is able to get out of the enemy's aggro range or if the player kills the enemy. I wanted to make the enemy 
+											smarter and strafe around the player to add more diverse gameplay or richer combat, but I couldn't figure it out in time and it wasn't the 
+											main goal of this project.
+										</p>
+										<header>
+											<h3>Results</h3>
+										</header>
+										<p>
+											The version currently up on itch is a very rough prototype that offers only some of the options available from the bar hub. 
+											The more recent version that holds many more features was submitted as the final project and will be optimized in due time for 
+											resubmission on itch to make it available to everyone. Eventually I will retry making this concept in 3D and improve the ideas 
+											mentioned to create a fully fleshed out game. As a learning experience, this was by far the most fruitful on in my game 
+											development journey as I had never faced this many challenges in a project beforehand.
+										</p>
+									</article>
+
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+								<section class="box">
+									<a href="https://pootpootpoot.itch.io/oubliettes" class="image featured"><img src="images/OubliettesCover.png" alt="" /></a>
+										<p> Visit the page on itch.io to download the game!
+										</p>
+										<footer>
+											<ul class="actions">
+												<li><a href="https://pootpootpoot.itch.io/oubliettes" class="button alt">View itch.io Page</a></li>
+											</ul>
+										</footer>
+								</section>
+								<section class="box">
+									<header>
+									  <ul class="social">
+										<li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/georges-a-brunet/"><span class="label">LinkedIn</span></a></li>
+										<li><a class="icon brands fa-github" href="https://github.com/GeorgesABrunet"><span class="label">LinkedIn</span></a></li>
+										<li><a class="icon brands fa-itch-io" href="https://pootpootpoot.itch.io/"><span class="label">LinkedIn</span></a></li>
+									  </ul>
+									</header>
+									<p>Find my contact information on LinkedIn, and my projects on itch.io and Github!</p>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

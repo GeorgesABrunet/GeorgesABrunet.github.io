@@ -3052,6 +3052,31 @@ input, select, textarea {
 		width:70%;
 		animation: C 2s;
 	  }
+
+	  .Unity{
+		width:75%;
+		animation: Unity 2s;
+	  }
+	  
+	  .UnrealEngine{
+		width:65%;
+		animation: UnrealEngine 2s;
+	  }
+
+	  .Love2D{
+		width:90%;
+		animation: Love2D 2s;
+	  }
+
+	  .Blender{
+		width:80%;
+		animation: Blender 2s;
+	  }
+
+	  .GIMP{
+		width:95%;
+		animation: GIMP 2s;
+	  }
 	  
 	  @keyframes french{
 		0%{
@@ -3296,6 +3321,51 @@ input, select, textarea {
 		}
 	  }
 
+	  @keyframes Unity{
+		0%{
+			width: 0%;
+		  }
+		  100%{
+			width: 75%;
+		  }
+	  }
+
+	  @keyframes UnrealEngine{
+		0%{
+			width: 0%;
+		  }
+		  100%{
+			width: 65%;
+		  }
+	  }
+
+	  @keyframes Love2D{
+		0%{
+			width: 0%;
+		  }
+		  100%{
+			width: 90%;
+		  }
+	  }
+
+	  @keyframes Blender{
+		0%{
+			width: 0%;
+		  }
+		  100%{
+			width: 80%;
+		  }
+	  }
+
+	  @keyframes GIMP{
+		0%{
+			width: 0%;
+		  }
+		  100%{
+			width: 95%;
+		  }
+	  }
+
 	  /* Style Additions for Skills page */
 	  .bar{
 		background: rgb(221, 221, 221);
@@ -3366,7 +3436,7 @@ input, select, textarea {
 
 		.content
 		{
-		position:relative;
+			position:relative;
 			width:100%;
 			margin:auto;
 		}
@@ -3376,8 +3446,8 @@ input, select, textarea {
 			position: absolute;
 			width:100%;
 			height: auto;
-			
-			padding:5%;
+			padding: 2.75em 1.75em 2.75em 1.75em;
+			/*padding:5%;*/
 			display:flex;
 			justify-content: center;
 			align-items: center;
