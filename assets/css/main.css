@@ -1612,6 +1612,10 @@ input, select, textarea {
 			color:black;
 		}
 
+		.box p{
+			color:black;
+		}
+
 /* Button */
 
 	input[type="button"],
@@ -2113,7 +2117,7 @@ input, select, textarea {
 
 				#nav > ul > li > a {
 					border-radius: 5px;
-					color: #5d5d5d;
+					color: white;
 					text-decoration: none;
 					padding: 0.6em 1.2em 0.6em 1.2em;
 					-moz-transition: background-color .25s ease-in-out;
@@ -2124,7 +2128,7 @@ input, select, textarea {
 				}
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
-					background: #f3f3f3;
+					background: #5d5d5d;
 				}
 
 				#nav > ul > li.current > a {
@@ -2910,6 +2914,7 @@ input, select, textarea {
 				padding: 20px 0;
 			}
 
+
 		/* Footer */
 
 			#footer {
@@ -3388,18 +3393,22 @@ input, select, textarea {
 	  .container .icon
 		{
 		position:relative;
+		
 		margin:auto;
-			text-align:center;
-			display:flex;
-			justify-content: center;
-			align-items: center;
-			padding-bottom: 3%;
+		text-align:center;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 3%;
 		}
 
-		.container .icon .iconBx
+		.container /*.icon*/ .iconBx
 		{
 			position:relative;
-			width:25%;
+			font-size: auto;
+			margin: auto;
+			/*width:25%;*/
+			width:auto;
 			cursor:pointer;
 			text-align:center;
 			display:flex;
@@ -3434,14 +3443,14 @@ input, select, textarea {
 			
 		}
 
-		.content
+		.container .content
 		{
 			position:relative;
 			width:100%;
 			margin:auto;
 		}
 
-		.content .contentBx
+		.container .content .contentBx
 		{
 			position: absolute;
 			width:100%;
@@ -3458,7 +3467,7 @@ input, select, textarea {
 			background-color: white;
 		}
 
-		.content .contentBx.active
+		.container .content .contentBx.active
 		{
 			transform: scale(1);
 			opacity:1;
