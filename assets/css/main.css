@@ -3029,7 +3029,7 @@ input, select, textarea {
 	  }
 	  
 	  .cplusplus{
-		width:60%;
+		width:75%;
 		animation: cplusplus 2s;
 	  }
 	  
@@ -3054,7 +3054,7 @@ input, select, textarea {
 	  }
 	  
 	  .C{
-		width:70%;
+		width:60%;
 		animation: C 2s;
 	  }
 
@@ -3277,7 +3277,7 @@ input, select, textarea {
 			width: 0%;
 		  }
 		  100%{
-			width: 60%;
+			width: 75%;
 		  }
 	  }
 	  
@@ -3313,7 +3313,7 @@ input, select, textarea {
 		  width: 0%;
 		}
 		100%{
-		  width: 70%;
+		  width: 60%;
 		}
 	  }
 	  
@@ -3374,9 +3374,9 @@ input, select, textarea {
 	  /* Style Additions for Skills page */
 	  .bar{
 		background: rgb(221, 221, 221);
-		  display:block;
+		  display:inline-flex;
 		  height: 18px;
-		  width: 400px;
+		  width: 95%/*400px*/;
 		  margin:auto;
 		  border: 2px solid rgba(0,0,0,0.3);
 		  border-radius: 10px;
@@ -3393,10 +3393,9 @@ input, select, textarea {
 	  .container .icon
 		{
 		position:relative;
-		
 		margin:auto;
 		text-align:center;
-		display:flex;
+		/*display:flex;*/
 		justify-content: center;
 		align-items: center;
 		padding-bottom: 3%;
@@ -3447,13 +3446,13 @@ input, select, textarea {
 		{
 			position:relative;
 			width:100%;
-			margin:auto;
+			/*margin:auto;*/
 		}
 
-		.container .content .contentBx
+		.container /*.content*/ .contentBx
 		{
 			position: absolute;
-			width:100%;
+			width:inherit;
 			height: auto;
 			padding: 2.75em 1.75em 2.75em 1.75em;
 			/*padding:5%;*/
@@ -3467,7 +3466,7 @@ input, select, textarea {
 			background-color: white;
 		}
 
-		.container .content .contentBx.active
+		.container /*.content*/ .contentBx.active
 		{
 			transform: scale(1);
 			opacity:1;

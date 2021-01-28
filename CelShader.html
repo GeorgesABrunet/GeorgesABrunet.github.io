@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Cel Shader</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="images/gabicon.png"/>
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+			<!-- Intro Start-->
+				  <!-- Header -->
+			<section id="header">
+	  
+			  <!-- Logo -->
+				<h1><a href="index.html">Georges Brunet</a></h1>
+	  
+			  <!-- Nav -->
+				<nav id="nav">
+				  <ul>
+					<li ><a href="index.html">Home</a></li>
+					<li>
+					  <a href="#">Projects</a>
+					  <ul>
+						<li><a href="GameJams.html">Game Jams</a></li>
+						<li><a href="GD50.html">GD50</a></li>
+						<li><a href="IBMCapstoneProj.html">IBM Certificate Capstone</a></li>
+					  </ul>
+					</li>
+					<li class="current"><a href="Portfolio.html">Portfolio</a></li>
+					<li><a href="Resume.html">Resume</a></li>
+					<li><a href="Work.html">Work</a></li>
+					<li><a href="Education.html">Education</a></li>
+					<li><a href="Skills.html">Skills</a></li>
+					
+				  </ul>
+				</nav>
+			</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+									<article class="box post">
+										<a class="image featured"><img src="images/CelShaderPics/Comparison.png" alt="" /></a>
+										<header>
+											<h2>Cel Shader</h2>
+											<p>Giving a toonish art style to your project</p>
+										</header>
+										<p>
+											Cel shaders are very valuable in development and for those seeking to achieve a certain art style. This effect can be seen in major 
+											titles such as Breath of the Wild and the Borderlands franchise. So what is it exactly? Simply put, A cel shader casts the colors within a range to
+											a certain value based on the design of the shader to give the scene a "paper-like" feel. This can be done in multiple ways but the result gives 3D objects and environments 
+											a look as if they were drawn. The benefits to this are numerous as cel shaders not only provide a nice art style but can speed up object and
+											texture development by contrast. That is to say, artists won't need to be as specific in detailing because the cel shader can reduce detail yet 
+											preserve the artistic direction. On this page, I will provide a simple tutorial on how to create this in Unreal Engine 4.
+										</p>
+										<header>
+											<h2>Creating a Cel Shader in UE4</h2>
+										</header>
+
+										<h3>Step 1</h3>
+										<p>
+											The process to creating one in UE4 is fairly straight forward. We will start by creating a material, naming it M_CelShader, and opening it up. 
+											In the editor, head to the material options in the Details panel. From there, change the Material Domain to Post Process. This will enable us to attach it to a post process 
+											object in the level. Also head down in the Details panel to the Post Process Material section and change the setting of Blendable Location to 
+											Before Tonemapping.
+										</p>
+										<section>
+										<a class="image featured"><img src="images/CelShaderPics/MaterialDomainSetting.png" style = "width: 45%; margin: auto; margin-top: 10%;" alt=""/>
+											<img src="images/CelShaderPics/BlendableLocationSetting.png" style = "width: 40%; margin: auto; margin-top: 2%;" alt=""/></a>
+
+
+										<h3>Step 2</h3>
+										<p>
+											In the editor, we will create two Scene Texture nodes. In the first one, change the Scene Texture Id in the UMaterial Expression Scene Texture 
+											section in the Details panel to "PostProcessInput0". In the second node, change the Scene Texture Id to "DiffuseColor". Link the color output 
+											of each Scene Texture node to their own new Desaturation node. You can do this by dragging out the color output to anywhere outside the node and 
+											typing "Desaturation". From here, create a Divide node and link the output of the "PostProcessInput0" Desaturation node to the A input, and the other 
+											Desaturation node to input B of the Divide node. You can comment this section and label it Scene Texture.
+											<a class="image featured"><img src="images/CelShaderPics/SceneTextureNodes.png" style = "width: 80%; margin: auto;  margin-top: 10%;" alt=""/></a>
+										</p>
+
+										<h3>Step 3</h3>
+										<p>
+											Step 2 allows us to set up the ranges to be affected by the shader. In this step, we will create the ranges to affect the level. This will be done by 
+											connecting the output of the Scene Texture Divide node to different If statement nodes so make sure to space these out appropriately. The color ranges 
+											this tutorial will cover are Whites, Highlights, Neutrals, Shadows, and Blacks. So begin this process by dragging out the output of the Divide node 
+											to any space and create and If node. This will automatically connect it to the input A of the If node. Next, create a Scalar Parameter node and change 
+											its name to "White Threshold". In the default value, choose the value 8. Now link the output of the node to input B of the If node. Create a constant 
+											node by holding down 1 and left-clicking and link it to the "A > B" input of the If node. Choose the value 5. Next, duplicate the Scene Texture node with the 
+											"DiffuseColor" setting by selecting it and holding Ctrl + W. Drag it near the If node and drag the output of the color of the Scene Texture node out and create 
+											a Multiply node. Duplicate the White Threshold node and change the name to "White Tint" and change the default value to 4. Drag the output of that node to input B 
+											of the Multiply node. Now drag the output of the Multiply node to the "A < B" input of the If statement. You can now select the White Threshold, Constant, Scene 
+											Texture, White Tint, Multiply, and If node then press "C" and label this comment box "White". You're almost there now! Below this chunk of nodes, 
+											create a new If statement node. Drag the output of the original If node and tie it to the "A > B" input of the new node. Make sure you have ample room between 
+											these two things as the second If node will represent the range for Highlights. If the earlier instructions were properly followed, your white section should 
+											look like this. 
+										</p>
+										<a class="image featured"><img src="images/CelShaderPics/WhiteRange.png" style = "width: 80%; margin: auto;  margin-top: 10%;" alt=""/></a>
+
+										<h3>Step 4</h3>
+										<p>
+											We will essentially repeat step 3 to create the ranges for Highlights, Neutrals, Shadows, and Blacks. The important note to make here is that we are basing the 
+											connections between the If nodes from the output of the previous to the "A > B" input of the current, and that the thresholds for each must be lower than the previous.
+											It is because of this that it is handy (and visually appealing) to have these sections ordered like a ladder, with the White range at the top. 
+											Following this logic, you can duplicate the White range and edit the names for the respective range and change the threshold and tint values for the appropriate sections 
+											to: Highlight Threshold: 4.4, Highlight Tint: 2, Neutral Threshold: 1.3, 
+											Neutral Tint: 1.25, Shadow Threshold: 0.7, Shadow Tint: 0.75, Black Threshold: 0.01, Black Tint: 0. Feel free to play around with these values to achieve the effect 
+											you desire once this is set up completely, but remember that the threshold values must follow a decreasing order. The four sections should look like below if the instructions 
+											were properly followed.
+										</p>
+										<a class="image featured"><img src="images/CelShaderPics/HighlightRange.png" style = "width: 80%; margin: auto;  margin-top: 10%;" alt=""/></a>
+										<a class="image featured"><img src="images/CelShaderPics/NeutralRange.png" style = "width: 80%; margin: auto;  margin-top: 10%;" alt=""/></a>
+										<a class="image featured"><img src="images/CelShaderPics/ShadowRange.png" style = "width: 80%; margin: auto;  margin-top: 10%;" alt=""/></a>
+										<a class="image featured"><img src="images/CelShaderPics/BlackRange.png" style = "width: 80%; margin: auto;  margin-top: 10%;" alt=""/></a>
+
+										<h3>Step 5</h3>
+										<p>
+											Here we can connect the output of the final If node to the master node's Emissive Color input. Press Apply at the top left of the editor and return to the level. 
+											From the level overview, search in the Place Actors section for a Post Process Volume and add it to the level, then select it. In the Details panel, scroll down to 
+											the Post Process Volume Settings. Change the Blend Weight value to 1.0, and make sure that Enabled is selected and Infinite Extent(Unbound) is also selected. This will make 
+											it such that the Cel Shader is no longer bound to the size of the Post Process Volume object. Next, scroll up in the Details panel to the Rendering Features section. 
+											Expand the Post Process Materials section, then expand the array section. Select "Asset reference", or the last option in the dropdown menu, and select the M_CelShader material
+											we created at the start of the tutorial. This should already affect the scene and make it seem as if it were drawn. But we're not done yet, unfortunately.
+										</p>
+										<a class="image featured"><img src="images/CelShaderPics/PPRenderingFeatures.png" style = "width: 50%; margin: auto;  margin-top: 10%;" alt=""/>
+											<img src="images/CelShaderPics/PPVolumeSettings.png" style = "width: 40%; margin: auto; margin-top: 2%;" alt=""/></a>
+										
+										<h3>Step 6</h3>
+										<p>
+											The way the material is set up, the color of lights is not preserved through the post process effect. A lot of tutorials seem to miss out on this dire detail.
+											Using the cel shader as is will make lights seem like pronounced white circles and that's not how light works, so, yeah. To fix this, 
+											head back into the material editor. Duplicate the Scene Texture with "PostProcessInput0" from the Scene Texture section and drag it out to the right of the ranges. 
+											Drag the color output of the Scene Texture node and create a Normalize node. Now create a Multiply node by holding down M and left-clicking and change the value of the constant 
+											B to 1.5. Drag the output of the Normalize node to the input A of the Multiply node. Now create a new Multiply node and connect the output of the original Multiply node to input B.
+											Next, head back to the Black ranges If node a drag the output to near the new Scene Texture "PostProcessInput0" node and create a Desaturation node. Link the output of this Desaturation 
+											node to the input A of the second Multiply node. You can now select the Scene Texture, Normalize, Desaturation, and both Multiply nodes and adding them to a comment box labeled 
+											"Light Color Enabling". Link the output of the second Multiply node to the Emissive Color input of the master node. This should now enable colored lighting! The section should look like 
+											this.
+										</p>
+										<a class="image featured"><img src="images/CelShaderPics/LightColorEnabling.png" style = "width: 80%; margin: auto;  margin-top: 10%;" alt=""/></a>
+
+										<h3>Step 7</h3>
+										<p>
+											This next step is not absolutely necesssary, but it is nice to have included since a cel shader pronounces colors and shade within a range to a single constant. This 
+											means that in some cases, lighting details may be lost or unnoticeable without proper ambient occlusion added to the material. So let's add that.
+											Near your "Light Color Enabling" section, create a new Scene Texture node. In the Scene Texture Id setting, select "Ambient Occlusion". Drag the color output to the right and 
+											create a Component Mask node. Make sure to have the R, G, and B fields selected. Create a Multiply node to the right of it and drag the output of the Mask node to the B input of the 
+											Multiply node. Finally, return to the Light Color Enabling section and drag the output of the Multiply node to the A input of the Multiply node we just created. Comment the three nodes 
+											to their own comment box and label it "Ambient Occlusion".
+											And there! Select Apply or Save in the top left corner to complete your cel shader.
+										</p>
+										<a class="image featured"><img src="images/CelShaderPics/AmbientOcclusion.png" style = "width: 80%; margin: auto;  margin-top: 10%;" alt=""/></a>
+
+										<h3>Performance</h3>
+										<p>
+											Enjoy! Your Cel shader is now complete and you may now experiment with the values to reach the desired effect. On another note, this effect should be implemented early on in production.
+											This can have effects on your visuals and it's better to see its potential early on. This effect is pretty performant on its own and can be built upon. Shader complexity 
+											seems to grow based on the complexity of other materials that go through it during runtime, namely landscape materials. Based on testing, I can say it's rather marginal and should not 
+											discourage you from trying things.
+										</p>
+										<a class="image featured"><img src="images/CelShaderPics/CelShaderComplexity.png" style = "width: 90%; margin: auto; margin-top: 10%;" alt=""/></a>
+
+										<header>
+										<h3>Check the portfolio page on my website for more tutorials!</h3>
+										</header>
+
+									</article>
+
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+								<section class="box">
+									<header>
+									  <ul class="social">
+										<li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/georges-a-brunet/"><span class="label">LinkedIn</span></a></li>
+										<li><a class="icon brands fa-github" href="https://github.com/GeorgesABrunet"><span class="label">Github</span></a></li>
+										<li><a class="icon brands fa-itch-io" href="https://pootpootpoot.itch.io/"><span class="label">Itch.io</span></a></li>
+									  </ul>
+									</header>
+									<p>Find my contact information on LinkedIn, and my projects on itch.io and Github!</p>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
