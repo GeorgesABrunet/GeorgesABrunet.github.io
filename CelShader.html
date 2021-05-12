@@ -57,12 +57,33 @@
 											a certain value based on the design of the shader to give the scene a "paper-like" feel. This can be done in multiple ways but the result gives 3D objects and environments 
 											a look as if they were drawn. The benefits to this are numerous as cel shaders not only provide a nice art style but can speed up object and
 											texture development by contrast. That is to say, artists won't need to be as specific in detailing because the cel shader can reduce detail yet 
-											preserve the artistic direction. On this page, I will provide a simple tutorial on how to create this in Unreal Engine 4.
+											preserve the artistic direction. Here I will provide two ways to implement this effect - One way will be based on a LUT band, and the other will be a manual setup. 
+											Both have their charms, but functionality remains very similar.
 										</p>
 										<header>
 											<h2>Creating a Cel Shader in UE4</h2>
 										</header>
 
+										<h3>Cel Shading: The LUT Band Setup</h3>
+										<p>
+											A LUT band serves as a clever way to reassign values to ranges based on where they fall on a lookup texture. Basically, the RGB values of colors in-game are compared to where they fall
+											 on the span of the Look Up Texture band, hence the acronym, then they are recast to the appropriate value the LUT band provides. A LUT is really a black-to-white texture that is 
+											 1 pixel in width, and however long you wish to have the span address. Having a longer LUT provides more accuracy to the amount of Cel Shading. Since RGB values cap at 256, the maximum 
+											dimensions of a LUT is technically 1 by 256 pixels. For this example, I will use a LUT with the dimensions of 1 by 128 pixels. I will skip some details in this implementation 
+											as I will cover them again in the alternate setup, but essentially, a Cel Shader using a LUT needs this setup in a Post Process material. 
+										</p>
+										<a class="image featured"><img src="images/CelShaderPics/LUTbandCelShader.png" style = "width: 90%; margin: auto; margin-top: 10%;" alt=""/></a>
+										
+										<p>
+											Now just plug that into the emissive color input, and set the blendable location of the post process material to Before Tonemapping.
+										</p>
+
+
+										<h3>Cel Shading: Alternate Setup</h3>
+										<p>
+											This method is the implementation made by the developer of Prismatica, a game currently under development with a gold mine of technical art designs. The Youtube channel also 
+											contains more tutorials that I strongly suggest people watch if they wish to learn more.
+										</p>
 										<h3>Step 1</h3>
 										<p>
 											The process to creating one in UE4 is fairly straight forward. We will start by creating a material, naming it M_CelShader, and opening it up. 
@@ -70,7 +91,6 @@
 											object in the level. Also head down in the Details panel to the Post Process Material section and change the setting of Blendable Location to 
 											Before Tonemapping.
 										</p>
-										<section>
 										<a class="image featured"><img src="images/CelShaderPics/MaterialDomainSetting.png" style = "width: 45%; margin: auto; margin-top: 10%;" alt=""/>
 											<img src="images/CelShaderPics/BlendableLocationSetting.png" style = "width: 40%; margin: auto; margin-top: 2%;" alt=""/></a>
 
@@ -157,10 +177,18 @@
 										</p>
 										<a class="image featured"><img src="images/CelShaderPics/AmbientOcclusion.png" style = "width: 80%; margin: auto;  margin-top: 10%;" alt=""/></a>
 
+										<h3>Additional Step</h3>
+										<p>
+											While a Cel Shader can be a key aspect of your artistic direction, there are ways it can hinder other effects in your world. Skyboxes and skies in general tend to scale in 
+											a negative fashion with Cel Shading. To avoid this, you can limit the range of effect of your Cel Shader by curbing its effect based on distance. You can slap this functionality at the end 
+											before plugging it into the emissive, and having your effect plug into the A < B input of the If statement.
+										</p>
+										<a class="image featured"><img src="images/CelShaderPics/DistanceFalloff.png" style = "width: 80%; margin: auto;  margin-top: 10%;" alt=""/></a>
+										
 										<h3>Performance</h3>
 										<p>
 											Enjoy! Your Cel shader is now complete and you may now experiment with the values to reach the desired effect. On another note, this effect should be implemented early on in production.
-											This can have effects on your visuals and it's better to see its potential early on. This effect is pretty performant on its own and can be built upon. Shader complexity 
+											This can have effects on your visuals and it's better to see its potential early on. This effect and its different forms are pretty performant on their own and can be built upon. Shader complexity 
 											seems to grow based on the complexity of other materials that go through it during runtime, namely landscape materials. Based on testing, I can say it's rather marginal and should not 
 											discourage you from trying things.
 										</p>
