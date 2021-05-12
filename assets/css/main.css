@@ -2188,8 +2188,8 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
-		/*background: #26292b00 url("../../images/CurseEaterCont/CurseEaterBanner.gif");*/
+		/*background: #CCE8F4 url("../../images/pic01.jpg");*/
+		background: #26292b00 url("../../images/CurseEaterCont/LightningTest5.gif");
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
